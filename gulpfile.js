@@ -6,6 +6,7 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
+var autoprefixer = require('gulp-autoprefixer');
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -21,11 +22,25 @@ gulp.task('less', function() {
     return gulp.src('less/creative.less')
         .pipe(less())
         .pipe(header(banner, { pkg: pkg }))
+        .pipe(autoprefixer())
         .pipe(gulp.dest('css'))
         .pipe(browserSync.reload({
             stream: true
         }))
 });
+
+//// Autoprefix after LESS compiles to CSS
+//gulp.task('autoprefixer', function () {
+//    gulp.src('css/creative.css')
+//        .pipe(autoprefixer({
+//            browsers: ['last 2 versions'],
+//            cascade: false
+//        }))
+//        .pipe(gulp.dest('css'))
+//        .pipe(browserSync.reload({
+//            stream: true
+//        }))
+//});
 
 // Minify compiled CSS
 gulp.task('minify-css', ['less'], function() {
