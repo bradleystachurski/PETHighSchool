@@ -9,15 +9,9 @@ html {
     box-sizing: border-box;
 }
 
-html {
-    box-sizing: border-box;
-    font-family: "Arial Rounded MT Bold","Helvetica Rounded",Arial,sans-serif
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
+
 body {
-    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
     background: #e74c3c;
 }
 
@@ -27,13 +21,13 @@ nav {
 }
 
 .cool > li > a {
-    color: yellow;
+    color: white;
     text-decoration: none;
     font-size: 20px;
     background: rgba(0,0,0,0.2);
     padding:10px 20px;
     display: inline-block;
-    margin:20px;
+    margin: 20px;
     border-radius:5px;
 }
 
@@ -47,7 +41,7 @@ nav ul {
 
 .cool > li {
     position: relative;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
@@ -62,10 +56,11 @@ nav ul {
     transform: translateY(100px);
     will-change: transform;
     display: none;
+    z-index: 1;
 }
 
 .trigger-enter .dropdown {
-    display: block;
+    display: flex;
 }
 
 .trigger-enter-active .dropdown {
@@ -145,3 +140,59 @@ a.button {
 
 
 
+
+// Testing styles -- to be refactored
+.image-slider {
+    border: 1px solid white;
+}
+
+.call-to-action-box {
+    border: 1px solid white;
+}
+
+.main-links {
+    border: 1px solid white;
+
+    ul {
+        list-style: none;
+    }
+
+    text-align: end;
+    padding: 0 10px;
+}
+
+.welcome-section {
+    border: 1px solid white;
+}
+
+footer {
+    padding: 50px 0;
+    background-color: @theme-primary;
+    color: white;
+    font-size: 12px;
+    span {
+        margin: 0 10px;
+    }
+}
+
+.main-page-content {
+    min-height: 600px;
+}
+
+.top {
+    z-index: 1; // Brings the nav dropdowns in front of other elements
+}
+
+.curriculum-dropdown {
+    //display: flex;
+    min-width: 800px;
+}
+
+.curriculum-dropdown > * {
+    margin: 20px;
+    flex: 1;
+}
+
+.curriculum-overview {
+    flex: 3;
+}

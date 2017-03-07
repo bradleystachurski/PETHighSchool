@@ -11,17 +11,8 @@
 html {
   box-sizing: border-box;
 }
-html {
-  box-sizing: border-box;
-  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
 body {
-  min-height: 100vh;
+  font-family: 'Lato', sans-serif;
   background: #e74c3c;
 }
 nav {
@@ -30,7 +21,7 @@ nav {
           perspective: 600px;
 }
 .cool > li > a {
-  color: yellow;
+  color: white;
   text-decoration: none;
   font-size: 20px;
   background: rgba(0, 0, 0, 0.2);
@@ -72,9 +63,12 @@ nav ul {
           transform: translateY(100px);
   will-change: transform;
   display: none;
+  z-index: 1;
 }
 .trigger-enter .dropdown {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .trigger-enter-active .dropdown {
   opacity: 1;
@@ -155,4 +149,50 @@ a.button {
 }
 .button[href*=courses] {
   background: #ffc600;
+}
+.image-slider {
+  border: 1px solid white;
+}
+.call-to-action-box {
+  border: 1px solid white;
+}
+.main-links {
+  border: 1px solid white;
+  text-align: end;
+  padding: 0 10px;
+}
+.main-links ul {
+  list-style: none;
+}
+.welcome-section {
+  border: 1px solid white;
+}
+footer {
+  padding: 50px 0;
+  background-color: #e67e22;
+  color: white;
+  font-size: 12px;
+}
+footer span {
+  margin: 0 10px;
+}
+.main-page-content {
+  min-height: 600px;
+}
+.top {
+  z-index: 1;
+}
+.curriculum-dropdown {
+  min-width: 800px;
+}
+.curriculum-dropdown > * {
+  margin: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.curriculum-overview {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
 }
