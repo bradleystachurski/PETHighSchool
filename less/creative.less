@@ -195,4 +195,31 @@ footer {
 
 .curriculum-overview {
     flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+
+    & > * {
+        flex: 1;
+    }
+
+    h2 {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    p {
+        flex: 4;
+    }
+
+    .curriculum-image-wrapper {
+        flex: 1 1 33.3333%;
+    }
+
+    img {
+        max-height: 100%;
+        float: right;
+    }
+
+
+
 }
