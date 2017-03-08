@@ -48,7 +48,7 @@ nav ul {
     position: absolute;
     overflow: hidden;
     padding:20px;
-    top:-20px;
+    top:-40px;
     border-radius:2px;
     transition: all 0.25s;
     transform: translateY(100px);
@@ -71,7 +71,8 @@ nav ul {
     width:100px;
     height:100px;
     position: absolute;
-    background: #fff;
+    //background: #fff;
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 4px;
     box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
     transition:all 0.3s, opacity 0.1s, translate 0.2s;
@@ -119,7 +120,7 @@ nav ul {
 
 .dropdown a {
     text-decoration: none;
-    color: #ffc600;
+    color: #2980b9
 }
 
 a.button {
@@ -187,7 +188,7 @@ a.button {
 
 footer {
     padding: 50px 0;
-    background-color: @theme-primary;
+    background: @theme-gradient;
     color: white;
     font-size: 12px;
     span {
@@ -242,7 +243,7 @@ footer {
 }
 
 .header {
-    background: @theme-primary;
+    background: @theme-gradient;
 
     .title {
         color: white;
