@@ -12,7 +12,7 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
-    background: #e74c3c;
+    //background: #e74c3c;
 }
 
 nav {
@@ -141,15 +141,29 @@ a.button {
 
 // Testing styles -- to be refactored
 .image-slider {
-    border: 1px solid white;
+    border: 1px solid black;
+    position: relative;
+    width: 100%;
+
+    h2 {
+        color: white;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    img {
+        position: relative;
+        z-index: -1;
+    }
 }
 
 .call-to-action-box {
-    border: 1px solid white;
+    border: 1px solid black;
 }
 
 .main-links {
-    border: 1px solid white;
+    border: 1px solid black;
 
     ul {
         list-style: none;
@@ -160,7 +174,7 @@ a.button {
 }
 
 .welcome-section {
-    border: 1px solid white;
+    border: 1px solid black;
 }
 
 footer {
