@@ -141,29 +141,38 @@ a.button {
 
 // Testing styles -- to be refactored
 .image-slider {
-    border: 1px solid black;
     position: relative;
     width: 100%;
+    margin: 20px 0;
 
     h2 {
         color: white;
         position: absolute;
-        left: 20px;
-        top: 20px;
+        font-weight: 700;
+        left: 48px;
+        top: 95px;
     }
 
     img {
         position: relative;
         z-index: -1;
     }
+
+    .quote-banner {
+        color: white;
+        position: absolute;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        bottom: 40px;
+        padding: 10px;
+        padding-left: 48px;
+    }
 }
 
 .call-to-action-box {
-    border: 1px solid black;
 }
 
 .main-links {
-    border: 1px solid black;
 
     ul {
         list-style: none;
@@ -174,7 +183,6 @@ a.button {
 }
 
 .welcome-section {
-    border: 1px solid black;
 }
 
 footer {
@@ -234,7 +242,7 @@ footer {
 }
 
 .header {
-    background: #3498db;
+    background: @theme-primary;
 
     .title {
         color: white;

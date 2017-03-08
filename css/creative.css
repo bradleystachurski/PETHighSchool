@@ -148,37 +148,40 @@ a.button {
   background: #ffc600;
 }
 .image-slider {
-  border: 1px solid black;
   position: relative;
   width: 100%;
+  margin: 20px 0;
 }
 .image-slider h2 {
   color: white;
   position: absolute;
-  left: 20px;
-  top: 20px;
+  font-weight: 700;
+  left: 48px;
+  top: 95px;
 }
 .image-slider img {
   position: relative;
   z-index: -1;
 }
-.call-to-action-box {
-  border: 1px solid black;
+.image-slider .quote-banner {
+  color: white;
+  position: absolute;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  bottom: 40px;
+  padding: 10px;
+  padding-left: 48px;
 }
 .main-links {
-  border: 1px solid black;
   text-align: end;
   padding: 0 10px;
 }
 .main-links ul {
   list-style: none;
 }
-.welcome-section {
-  border: 1px solid black;
-}
 footer {
   padding: 50px 0;
-  background-color: #e67e22;
+  background-color: #3498db;
   color: white;
   font-size: 12px;
 }
